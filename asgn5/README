@@ -1,0 +1,15 @@
+Vic Grigoryev (vgrigory)
+
+Instructions:
+- Run "make" or "make all" to compile both minget and minls
+- Run "make tidy" to remove the build folder and leave only the runnable files
+- Use ./minls or ./minget to run the desired functions
+- Run "make clean" to clean all built objects
+
+Notes:
+- Used 3 late days on it, worth it
+- These programs reliably fail 6 tests, all to do with holes.
+    - The one with direct to indirect: I was trying to figure out how 45072 bytes fit into 8 zones. Still not entirely sure.
+- There are a few unreliably failed tests, it has to do with 2 bogus characters being printed out before everything else on that test. It may have something to do with the lack of complete free statements. I've added them around wherever I remembered to, but it's highly likely this will affect test performance. Otherwise most will still pass.
+
+- i don't think i can thank you enough for dealing with my emails on a friday and saturday, especially week 10. it helped a lot with finishing this assignment and even though i wasnt able to get it 100% working ive learned a lot and i think thats what matters more to me

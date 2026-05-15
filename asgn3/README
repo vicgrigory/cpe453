@@ -1,0 +1,8 @@
+Vic Grigoryev (vgrigory)
+
+Instructions: Run make, then ./dine optionally with an integer to watch the philosophers screw around with the forks.
+
+Notes:
+- Not sure if I need an ifndef for each of the variables I added, but it's minor so who cares (or at least that's my impression, doesn't mean it's correct)
+
+thank you for the help on this. i feel more confident about c which works for me cuz i like c and c# more than higher level programming languages

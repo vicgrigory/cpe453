@@ -1,0 +1,21 @@
+Vic Grigoryev (vgrigory)
+
+Instructions: Run the following commands to obtain the outfile
+make clean (<- optional)
+make pipeit
+./pipeit
+cat outfile
+
+Notes:
+- outfile will not show up when running for the first time since it is created after the ls command
+is run. If you want it to be there then run the program again.
+- I've included -D_XOPEN_SOURCE = 700 because otherwise -Wimplicit-function-declaration would give
+me a warning for fileno at line 88. I've included stdio.h I don't know what else it wants and I've
+read this as a fix on StackOverflow and it works so it will stay.
+
+- i apologize in advance for the photo (a little bit)
+- this took me so long because i didnt realize the children just had to run execl. this was so easy.
+i spent HOURS sitting on this wondering why it didnt work. and i also just realized that you can set
+the file descriptor after opening it as the stdout via dup2 instead of using a while loop to write
+to it from ANOTHER pipe via the parent. c is so easy when you actually know how to think correctly.
+dup2 is awesome

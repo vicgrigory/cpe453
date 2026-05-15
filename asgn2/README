@@ -1,0 +1,12 @@
+Vic Grigoryev (vgrigory)
+
+Instructions: watch the errors come in when running "make" or "make liblwp.so"
+
+Notes: To spare you the details of the crisis I went through, I've accepted that my time management and refusal to change my routine to get help was the issue and not my lack of knowledge (even though I'm sure that plays in somewhere). I'll be there on Wednesday to pester you about assignment 3, and probably Friday too.
+
+I've written comments about what I got stuck on as I was working on this, but in summary:
+- The registers make complete sense to me in assembly, but I'm unsure how C functions translate to them
+- The comment in lab about the function being the return address connected somewhat, since we are trying to make this thread run its function, but I'm lost on how that connects with the rest of the work we're doing
+- The wrap function makes sense. I'm unsure on how this works with the assembly registers
+
+Otherwise I've tried my best in writing code that theoretically makes sense.

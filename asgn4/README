@@ -1,0 +1,17 @@
+Vic Grigoryev (vgrigory)
+
+Instructions: include the secret.c and secret.h files with the rest of the Minix distribution and let it rip
+
+Changes made to Minix:
+- added the device under major number 20 and minor number 0 with mknod under /dev/Secret
+- added the source directory under /usr/src/drivers/secrets
+- added SSGRANT into minix's ioctl.h with ioc_secret.h according to the assignment directions (and copied them into /usr/include/sys as well)
+- added the device into /etc/sys.conf by copying the hello permissions in that file
+
+Notes:
+- I put the SECRET_SIZE macro in the C file instead of making a seperate header file for it. I don't really know when it's standard practice to make a header file versus including things in the source directly
+
+- Minix required the socket.h file to be removed to compile cleanly
+- Minix also needed the message pointer to be m->m_source and not m->USER_ENDPT
+
+- thanks for the help on this. is it time for me to write drivers for the nonlinux compatible usb modems? probably not but i will try at some point anyway

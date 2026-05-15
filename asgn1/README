@@ -1,0 +1,12 @@
+Vic Grigoryev (vgrigory)
+
+Instructions:
+There's a debug main in the malloc.c file, run "make malloc" to create and run it with that function. "make intel-all" is also possible to compile and runs with no issues (make can make it but there will be C warnings..). "make clean" cleans out the directory. Compiles when run with demo but does not pass the sanity check.
+
+Notes:
+- This thing don't run. If you run the output from "make malloc" you'll get a bunch of scrolling debug text. That's intentional and its where I left off working on the debugging for my functions.
+- I added a v in front of the malloc functions to make sure I was debugging the correct ones in my main function. So anything in the demo will probably either not work or refer to the C library malloc.
+- It keeps looping when creating memory for malloc as it seems the header size and the size for heapStart do not resolve to be the same value. I cannot compare the types of both in C and got the suggestion from here: https://stackoverflow.com/a/6280372. Everything else *seems* to be okay but again without running every function I can't say for certain. (StackOverflow has betrayed me as fortold in Monday's lab. I should have listened.)
+
+- if you have any better suggestions for how i could handle this please let me know im kind of stuck theoretically on how to check whether there's data in the heapstart variable or if i even should be doing that ......
+- my brain died and consequently reset between monday after the lecture and tonight otherwise i wouldve been working on this more. apologies in advance

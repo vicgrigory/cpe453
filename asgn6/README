@@ -1,0 +1,9 @@
+Vic Grigoryev (vgrigory)
+
+Instructions:
+- run "make" or "make hello" to create the hello program
+- run "make test" to build and test the hello program
+- run "make clean" to clean extra object files left over from building
+
+Notes:
+- i enjoyed this class a lot, thank you for the knowledge and the help
